@@ -1,0 +1,1 @@
+{    "run_list" : [        "recipe[hello]",        "yum::epel",        "yum::remi",        "yum::repoforge",        "recipe[stop_iptables]",        "recipe[zsh]",        "recipe[nginx]"    ]}
