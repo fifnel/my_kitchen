@@ -6,16 +6,30 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-package "ruby1.9.3" do
-    action :install
+include_recipe "rbenv::default"
+include_recipe "rbenv::ruby_build"
+
+rbenv_ruby "1.9.3-p392" do
+    global true
 end
 
-package "rubygems" do
-    action :install
+rbenv_ruby "2.0.0-p0" do
+    global false
 end
 
-execute "switch to 1.9.3" do
-    command "sudo apt-get install ruby-switch && ruby-switch --set ruby1.9.3"
-    action :run
+rbenv_gem "rack" do
+    ruby_version "1.9.3-p392"
+end
+
+rbenv_gem "rails" do
+    ruby_version "1.9.3-p392"
+end
+
+rbenv_gem "sqlite3" do
+    ruby_version "1.9.3-p392"
+end
+
+rbenv_gem "sinatra" do
+    ruby_version "1.9.3-p392"
 end
 
