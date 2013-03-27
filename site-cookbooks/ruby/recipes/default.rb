@@ -17,19 +17,14 @@ rbenv_ruby "2.0.0-p0" do
     global false
 end
 
-rbenv_gem "rack" do
-    ruby_version "1.9.3-p392"
-end
+package "libsqlite3-ruby"
+package "libsqlite3-dev"
+package "nodejs"
 
-rbenv_gem "rails" do
-    ruby_version "1.9.3-p392"
-end
-
-rbenv_gem "sqlite3" do
-    ruby_version "1.9.3-p392"
-end
-
-rbenv_gem "sinatra" do
-    ruby_version "1.9.3-p392"
-end
+rbenv_gem "rails"
+rbenv_gem "bundler"
+rbenv_gem "rake"
+rbenv_gem "sinatra"
+rbenv_gem "therubyracer"
+rbenv_gem "execjs"
 
