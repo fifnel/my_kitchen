@@ -27,4 +27,5 @@ rbenv_gem "rake"
 rbenv_gem "sinatra"
 rbenv_gem "therubyracer"
 rbenv_gem "execjs"
+rbenv_gem "redis"
 

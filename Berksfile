@@ -7,4 +7,5 @@ cookbook 'ruby_build'
 cookbook 'rbenv'
 cookbook 'selinux'
 cookbook 'nodejs'
+cookbook 'redisio'
 
