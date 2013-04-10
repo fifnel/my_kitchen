@@ -8,4 +8,5 @@ cookbook 'rbenv'
 cookbook 'selinux'
 cookbook 'nodejs'
 cookbook 'redisio'
+cookbook 'vim'
 
